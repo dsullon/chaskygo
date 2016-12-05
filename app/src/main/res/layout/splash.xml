@@ -4,15 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="Prueba"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/imageView" />
+        android:src="@drawable/chasqui"
+        android:id="@+id/splashimageView"
+        />
 
 </LinearLayout>

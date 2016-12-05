@@ -2,12 +2,6 @@
 <resources>
     <string name="app_name">ChaskyGo</string>
     <string name="action_settings">Configuración</string>
-    <string name="action_sign_in">Iniciar sesión</string>
-    <string name="action_sign_in_short">Iniciar sesión</string>
-    <string name="error_field_required">Este campo es requerido</string>
-    <string name="error_incorrect_password">El password es incorrecto</string>
-    <string name="error_invalid_email">Email no válido</string>
-    <string name="error_invalid_password">El password es demasiado corto</string>
     <string name="main_color_hint">Color</string>
     <string name="main_licence_plate_hint">Placa</string>
     <string name="main_model_hint">Modelo</string>
@@ -19,4 +13,7 @@
     <string name="navigation_drawer_vehicle">Vehiculos</string>
     <string name="title_activity_main"></string>
     <string name="navigation_drawer_driver">Conductores</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_button_login">Iniciar sesión</string>
 </resources>

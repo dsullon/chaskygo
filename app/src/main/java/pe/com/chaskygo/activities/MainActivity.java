@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigation_drawer_driver, R.string.navigation_drawer_vehicle);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -85,7 +85,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_driver) {
-            // Handle the camera action
+            drawer.closeDrawer(GravityCompat.START);
+            Intent intent = new Intent(MainActivity.this, DriversActivity.class);
+            startActivity(intent);
+            return true;
         } else if (id == R.id.nav_vehicle) {
             drawer.closeDrawer(GravityCompat.START);
             Intent intent = new Intent(MainActivity.this, VehiclesActivity.class);

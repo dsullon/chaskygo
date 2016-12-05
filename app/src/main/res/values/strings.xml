@@ -8,22 +8,15 @@
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="hint_user">User</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_button_login">Login</string>
+
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- Strings related to navigation -->
     <string name="navigation_drawer_vehicle">Vehicles</string>
     <string name="navigation_drawer_driver">Drivers</string>
     <string name="title_activity_vehicles">VehiclesActivity</string>
+    <string name="title_activity_drivers">DriversActivity</string>
 </resources>

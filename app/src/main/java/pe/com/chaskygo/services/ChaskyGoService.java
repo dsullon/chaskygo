@@ -7,7 +7,7 @@ import pe.com.chaskygo.models.Vehicle;
  */
 
 public class ChaskyGoService {
-
+    private static String BASE_URL = "http://www.aymicg.com.pe/api/";
     public static String VEHICLES_URL = "http://www.aymicg.com.pe/api/vehicles";
     public static String DRIVERS_URL = "http://www.aymicg.com.pe/api/drivers";
 
@@ -17,7 +17,11 @@ public class ChaskyGoService {
         return currentVehicle;
     }
 
-    public void setCurrentSource(Vehicle currentVehicle) {
+    public void setCurrentVehicle(Vehicle currentVehicle) {
         this.currentVehicle = currentVehicle;
+    }
+
+    public static String getUrl(String resource){
+        return  BASE_URL + resource;
     }
 }
