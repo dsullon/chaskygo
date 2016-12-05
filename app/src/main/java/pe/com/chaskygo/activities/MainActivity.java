@@ -1,5 +1,6 @@
 package pe.com.chaskygo.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,6 +18,7 @@ import pe.com.chaskygo.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -85,14 +87,13 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_driver) {
             // Handle the camera action
         } else if (id == R.id.nav_vehicle) {
-
+            drawer.closeDrawer(GravityCompat.START);
+            Intent intent = new Intent(MainActivity.this, VehiclesActivity.class);
+            startActivity(intent);
+            return true;
         } else if (id == R.id.nav_delivery) {
 
-        } else if (id == R.id.nav_manage) {
-
         } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 

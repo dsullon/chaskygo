@@ -33,6 +33,10 @@
         <activity
             android:name=".activities.MainActivity"
             android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.VehiclesActivity"
+            android:label="@string/title_activity_vehicles"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -25,4 +25,5 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_vehicle">Vehicles</string>
     <string name="navigation_drawer_driver">Drivers</string>
+    <string name="title_activity_vehicles">VehiclesActivity</string>
 </resources>
