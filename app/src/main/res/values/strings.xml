@@ -19,4 +19,5 @@
     <string name="navigation_drawer_driver">Drivers</string>
     <string name="title_activity_vehicles">VehiclesActivity</string>
     <string name="title_activity_drivers">DriversActivity</string>
+    <string name="title_activity_deliveries">DeliveriesActivity</string>
 </resources>

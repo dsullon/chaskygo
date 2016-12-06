@@ -38,6 +38,14 @@
             android:name=".activities.VehiclesActivity"
             android:label="@string/title_activity_vehicles"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DriversActivity"
+            android:label="@string/title_activity_drivers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DeliveriesActivity"
+            android:label="@string/title_activity_deliveries"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

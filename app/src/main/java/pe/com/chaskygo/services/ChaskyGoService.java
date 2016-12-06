@@ -1,5 +1,6 @@
 package pe.com.chaskygo.services;
 
+import pe.com.chaskygo.models.Driver;
 import pe.com.chaskygo.models.Vehicle;
 
 /**
@@ -12,13 +13,20 @@ public class ChaskyGoService {
     public static String DRIVERS_URL = "http://www.aymicg.com.pe/api/drivers";
 
     private Vehicle currentVehicle;
+    private Driver currentDriver;
 
     public Vehicle getCurrentVehicle() {
         return currentVehicle;
     }
+    public Driver getCurrentDriver() {
+        return currentDriver;
+    }
 
     public void setCurrentVehicle(Vehicle currentVehicle) {
         this.currentVehicle = currentVehicle;
+    }
+    public void setCurrentDriver(Driver currentDriver) {
+        this.currentDriver = currentDriver;
     }
 
     public static String getUrl(String resource){
